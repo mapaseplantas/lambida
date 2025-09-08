@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Em Breve</title>
+  <title>LAMBIDA</title>
   <style>
     :root{
       --bg: #fffae7;
@@ -30,6 +30,13 @@
       font-style: normal;
     }
 
+      @font-face {
+      font-family: 'TheHandWideHeavy';
+      src: url('The Hand Wide Heavy.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     svg{
       max-width:360px;
       width:100%;
@@ -39,14 +46,28 @@
     }
 
     h1{
-      font-size: clamp(28px, 6vw, 52px);
+      font-size: clamp(30px, 7vw, 60px);
+      color:var(--brand-red);
+      font-family: 'TheHandWideHeavy', sans-serif;
+      letter-spacing:1px;  
+      line-height: 13vh;
+    }
+
+    h2{
+      font-size: clamp(24px, 5vw, 40px);
       color:var(--brand-red);
       font-family: 'TheHandWideBlack', sans-serif;
       letter-spacing:1px;
+      a{
+      color:var(--brand-red);
+      font-family: 'TheHandWideHeavy', sans-serif;
+      }
     }
+
   </style>
 </head>
 <body>
+  <h1>EM BREVE</h1><br>
   <!-- Logo inline como SVG -->
   <svg id="Modo_de_isolamento" data-name="Modo de isolamento" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637.49 129.41">
     <defs>
@@ -63,6 +84,6 @@
     <path class="cls-1" d="M533.73,116.49c-3.24-5.55-2.64-12.67,1.02-18,16.74-22.89,77.06-77.88,80.75-95.47,15.33-1.13,21.44,5.22,22,10.17-6.2,21.94-10.37,69.8-13.58,112.33-3.07,1.17-7.28,1.75-10.54,1.74-15.71-.06-19.48-17.08-17.91-29.74-8.81-.03-22.03-.47-25.86-.88-5.37,2.75-13.51,32.8-17.54,32.78-10.14-2.21-15.49-7.97-18.35-12.93ZM600.71,73.99l2.95-24.92-17.51,24.86,14.56.05Z"/>
   </svg>
 
-  <h1>Em Breve</h1>
+  <h2>Acesse <a href="https://www.instagram.com/projetolambida">@projetolambida</a></h2>
 </body>
 </html>

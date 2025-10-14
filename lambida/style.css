@@ -1,0 +1,120 @@
+:root{
+	--laranjaFonte : #cc624a;
+}
+
+body{
+	background-color: #ffffff;
+}
+.bg{
+	z-index: -1;
+	--borda: 50px;
+	background-color: #f4ebe0;
+	height: calc(100vh - var(--borda));
+	width: calc(100vw - var(--borda));
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.burgImg{
+	width: 2%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.burgImg:hover{
+	cursor: pointer;
+}
+.menu{
+	position: absolute;
+	width: 140px;
+	padding: 10px;
+	margin-left: 20px;
+	border: solid #e2b1a0;
+	border-width: 2px;
+	z-index: 1;
+}
+
+.hide{
+	opacity: 0%;
+} 
+
+.info{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	align-items: center;
+}
+
+a, p{
+    font-family: 'TheHandWideBlack', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: var(--laranjaFonte);
+}
+
+@font-face{
+	font-family: 'TheHandWideBlack';
+	src: url('fontes/The Hand Wide Black.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'TheHandWideHeavy';
+	src: url('fontes/The Hand Wide Heavy.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fundo{
+	height: 80%;
+}
+
+.cozinhaImg{
+	position: absolute;
+	width: 80%;
+}
+.ovosImg{
+	width: 13%;
+	position: relative;
+	left: 28.5%;
+	top: -7.5%;
+}
+.tomateImg{
+	position: relative;
+	width: 8%;
+	left: 3.5%;
+	top: 280px;
+}
+.quiabosImg{
+	width: 7.5%;
+	position: relative;
+	top: 24px;
+	left: -560px;
+}
+.alhosImg{
+	width: 6%;
+	position: relative;
+	top: 295px;
+	left: -205px;
+}
+.couveImg{
+	width: 8%;
+	position: relative;
+	left: 325px;
+	top: 15px;
+}
+.cebolasImg{
+	width: 10%;
+	position: relative;
+	left: 333px;
+	top: 275px;
+}
+.clicavel:hover{
+	transform: scale(1.05);
+}

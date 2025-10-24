@@ -1,60 +1,20 @@
 :root{
 	--laranjaFonte : #cc624a;
-}
-
-body{
-	background-color: #ffffff;
-}
-.bg{
-	z-index: -1;
-	--borda: 50px;
-	background-color: #f4ebe0;
-	height: calc(100vh - var(--borda));
-	width: calc(100vw - var(--borda));
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.burgImg{
-	width: 2%;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-.burgImg:hover{
-	cursor: pointer;
-}
-.menu{
-	position: absolute;
-	width: 140px;
-	padding: 10px;
-	margin-left: 20px;
-	border: solid #e2b1a0;
-	border-width: 2px;
-	z-index: 1;
-}
-
-.hide{
-	opacity: 0%;
-} 
-
-.info{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-
-	display: flex;
-	align-items: center;
-}
-
-a, p{
-    font-family: 'TheHandWideBlack', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-	color: var(--laranjaFonte);
+	--laranjaFonteOppacity : #cc624a82;
+	--creme : #fef2e1;
+  --rosa: #e0a38c;
+  --rosaOppacity: #e0a38c82;
+  --verde: #6f8926;
+  --verdeOppacity: #6f892682;
+  --musgo: #717d26;
+  --musgoOppacity: #717d2682;
+  --amarelo: #d9bc5f;
+  --amareloOppacity: #d9bc5f82;
+  --ocre: #ebd0b4;
+  --ocreOppacity: #ebd0b482;
+  --marrom: #9e7c44;
+  --marromOppacity: #9e7c4482;
+	
 }
 
 @font-face{
@@ -71,50 +31,310 @@ a, p{
 	font-style: normal;
 }
 
-.fundo{
-	height: 80%;
+body{
+	  background-color: var(--creme);
+    border-bottom: 2vh solid white; 
+    border-top: 2vh solid white; 
+    border-left: 1vw solid white; 
+    border-right: 1vw solid white; 
+    height: 96vh;       
+    width: 98vw;       
+    margin: 0;   
 }
 
-.cozinhaImg{
+a, p {
+  font-family: 'TheHandWideBlack', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: var(--laranjaFonte);
+}
+
+p::selection{
+  background-color: var(--laranjaFonte);
+	color: var(--creme);
+}
+img::selection{
+  background-color: var(--laranjaFonteOppacity);
+	color: var(--creme);
+}
+
+body::selection{
+  background-color: var(--laranjaFonte);
+	color: var(--creme);
+}
+
+ hr {
+  border: none;
+  height: 1.5px;
+  background: linear-gradient(
+    to right,
+    rgba(204, 98, 74, 0),
+    rgba(204, 98, 74, 1) 10%,
+    rgba(204, 98, 74, 1) 90%,
+    rgba(204, 98, 74, 0)
+  );
+  border-radius: 1px;
+  margin: 8px 0;
+}
+
+.hamburguer{
+  position:absolute !important;
+  top:50vw;
+  left:5vw;
+}
+
+.burgImg{
+	width: 2%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.burgImg:hover{
+	cursor: pointer;
+}
+.menu{
 	position: absolute;
-	width: 80%;
+	width: 140px;
+	padding: 20px;
+	margin-left: 20px;
+	border: solid var(--laranjaFonte);
+	border-width: 2px;
+    background-color: white;
+	font-size: 1.2em;
+	a{
+	text-decoration: none;
+	}
+	z-index: 1;
 }
-.ovosImg{
-	width: 13%;
-	position: relative;
-	left: 28.5%;
-	top: -7.5%;
+
+.hide{
+	opacity: 0%;
+} 
+
+.center {
+  min-height: 90dvh;
+  min-height: 90svh;
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
 }
-.tomateImg{
-	position: relative;
-	width: 8%;
-	left: 3.5%;
-	top: 280px;
+
+.info {
+  display: flex;
+  align-items: center;     /* centraliza verticalmente o texto */
+  justify-content: center; /* opcional: centraliza tudo no container */
+  gap: 40px;               /* espaço entre as imagens e o texto */
+  flex-wrap: wrap;         /* deixa responsivo em telas menores */
 }
-.quiabosImg{
-	width: 7.5%;
-	position: relative;
-	top: 24px;
-	left: -560px;
+
+/* empilha as imagens */
+.imagens {
+  display: flex;
+  flex-direction: column;  /* uma imagem em cima da outra */
+  align-items: center;     /* centraliza horizontalmente as imagens */
+  gap: 10px;               /* espaçamento entre elas */
 }
-.alhosImg{
-	width: 6%;
-	position: relative;
-	top: 295px;
-	left: -205px;
+
+/* formatação do texto */
+.texto {
+  max-width: 40vw;        /* limite de largura do bloco de texto */
+  line-height: 1.5;
+  font-size: 1rem;
 }
-.couveImg{
-	width: 8%;
-	position: relative;
-	left: 325px;
-	top: 15px;
+
+.fundo {
+  position: absolute;
+  width: 84vw;
+  height: calc(100vh - 16vw);
+  top: 8vw;
+  left: 8vw;
 }
-.cebolasImg{
-	width: 10%;
-	position: relative;
-	left: 333px;
-	top: 275px;
+
+.projeto_texto, p{
+  font-family: 'TheHandWideBlack', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	font-size: 1.5vw;
+  color: var(--laranjaFonte);
+}
+
+.cozinha-container {
+  position: relative;
+  width: 84vw;
+  height: calc(100vh - 16vw);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cozinhaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* mantém proporção da imagem */
+}
+
+.item {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 8%; /* ajuste o tamanho conforme necessário */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.logo{
+  width: 17%;
+}
+.ovos{
+  width: 12%;
+}
+.tomates{
+  width: 8%;
+}
+.quiabos{
+  width: 8%;
+}
+.alhos{
+  width: 5.5%;   /* largura relativa à cozinha */
+}
+.couve{
+  width: 8%;   /* largura relativa à cozinha */
+}
+.cebolas{
+  width: 9%;   /* largura relativa à cozinha */
 }
 .clicavel:hover{
-	transform: scale(1.05);
+	transform: translate(-50%, -50%) scale(1.05);
+}
+
+.audios{
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: right;  
+  padding-right: 2vw;
+}
+
+.audios::-webkit-scrollbar {
+  width: 10px;             /* largura da barra */
+}
+
+.audios::-webkit-scrollbar-thumb {
+  background-color: var(--laranjaFonte);   /* cor da barra */
+  border-radius: 5px;      /* cantos arredondados */
+}
+
+.audios::-webkit-scrollbar-thumb:hover {
+  background-color: var(--laranjaFonteOppacity); /* cor quando o mouse passa por cima */
+}
+
+.audios::-webkit-scrollbar-track {
+   background-color: transparent; /* cor da trilha de fundo */
+}
+
+.lista-audios{
+  font-family: 'TheHandWideBlack', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: var(--laranjaFonte);
+  font-size: 1.8vh;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+ul li {
+  line-height: 4vh; 
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  background: transparent;
+  user-select: none;
+  font-family: monospace;
+  display: inline-flex;         
+  align-items: center;     
+  justify-content: flex-start;
+}
+
+.play-btn {
+  background: none;
+  border: none;
+  color: var(--laranjaFonte);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.play-btn:hover {
+  color: var(--laranjaFonteOppacity);
+}
+
+.progress-container {
+  position: relative;
+  flex: 1;
+  height: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.belinha{
+  background: var(--musgo);
+}
+.belinhaOppacity{
+  background: var(--musgoOppacity);
+}
+
+.lena{
+  background: var(--rosa);
+}
+.lenaOppacity{
+  background: var(--rosaOppacity);
+}
+.rose{
+  background: var(--amarelo);
+}
+.roseOppacity{
+  background: var(--amareloOppacity);
+}
+.vera{
+  background: var(--ocre);
+}
+.veraOppacity{
+  background: var(--ocreOppacity);
+}
+.ruth{
+  background: var(--marrom);
+}
+.ruthOppacity{
+  background: var(--marromOppacity);
+}
+.silvia{
+  background: var(--verde);
+}
+.silviaOppacity{
+  background: var(--verdeOppacity);
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+}
+
+.progress-handle {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: transparent;
+}
+
+.time {
+  font-family: 'TheHandWideBlack', Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 1.3rem;
+  color: var(--laranjaFonte);
+  min-width: 90px;
+  text-align: right;
+  padding-right: 20px;
 }

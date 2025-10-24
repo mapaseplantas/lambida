@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Receitas Belinha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="hamburger">
+    <img src="./img/menu.png" class="burgImg" onclick="desenharMenu()">
+    <menu id="menu" class="menu hide"></menu>
+  </div>
+
+  <main class="center">
+    <div class="info">
+      <!-- Coluna de imagens -->
+      <div class="imagens">
+        <a href="index.html"><img src="img/logo_receitas.png" width="300"></a>
+        <a href="index.html"><img src="img/ilustracao_receitas.png" width="200"></a>
+      </div>
+
+      <!-- Coluna de players -->
+      <div class="audios">
+        <ul class="lista-audios">
+          <li>
+            tipo de feijão
+            <div class="audio-player" data-src="audios/Belinha/belinha1.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            comida para cozinha de terreiro 
+             <div class="audio-player" data-src="audios/Belinha/belinha2.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            caso da feijoada
+             <div class="audio-player" data-src="audios/Belinha/belinha3.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            louro é mãe, alho é toninho
+             <div class="audio-player" data-src="audios/Belinha/belinha4.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA benção de são benedito
+             <div class="audio-player" data-src="audios/Belinha/belinha5.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA tipos de carne
+             <div class="audio-player" data-src="audios/Belinha/belinha6.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA dicas de carne
+             <div class="audio-player" data-src="audios/Belinha/belinha7.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            crítica às cozinhas fake
+             <div class="audio-player" data-src="audios/Belinha/belinha8.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA lavar as panelas com farinha
+             <div class="audio-player" data-src="audios/Belinha/belinha9.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            por que fazer tropeiro
+             <div class="audio-player" data-src="audios/Belinha/belinha10.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA ponto do pernil
+            <div class="audio-player" data-src="audios/Belinha/belinha11.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            papo _ alquimia e ingredientes
+             <div class="audio-player" data-src="audios/Belinha/belinha12.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            papo, cozinha não tem
+             <div class="audio-player" data-src="audios/Belinha/belinha13.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA rendimentos e medidas
+             <div class="audio-player" data-src="audios/Belinha/belinha14.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            colheres e som de pururuca
+             <div class="audio-player" data-src="audios/Belinha/belinha15.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA couve
+             <div class="audio-player" data-src="audios/Belinha/belinha16.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            a gente não sabe que é segredo e cultura
+             <div class="audio-player" data-src="audios/Belinha/belinha17.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA soltando o feijão
+             <div class="audio-player" data-src="audios/Belinha/belinha18.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA finalização
+             <div class="audio-player" data-src="audios/Belinha/belinha19.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            cozinha e fotografia
+             <div class="audio-player" data-src="audios/Belinha/belinha20.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container belinhaOppacity">
+                    <div class="progress-bar belinha"></div>
+                    <div class="progress-handle belinha"></div>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>

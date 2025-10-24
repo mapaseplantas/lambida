@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Receitas lena</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="hamburger">
+    <img src="./img/menu.png" class="burgImg" onclick="desenharMenu()">
+    <menu id="menu" class="menu hide"></menu>
+  </div>
+
+  <main class="center">
+    <div class="info">
+      <!-- Coluna de imagens -->
+      <div class="imagens">
+        <a href="index.html"><img src="img/logo_receitas.png" width="300"></a>
+        <a href="index.html"><img src="img/ilustracao_receitas.png" width="200"></a>
+      </div>
+
+      <!-- Coluna de players -->
+      <div class="audios">
+        <ul class="lista-audios">
+          <li>
+            como começou a cozinhar
+            <div class="audio-player" data-src="audios/lena/lena1.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            o sonho
+             <div class="audio-player" data-src="audios/lena/lena2.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            começou a fazer bombons para escola
+             <div class="audio-player" data-src="audios/lena/lena3.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            circuito gastronômico
+             <div class="audio-player" data-src="audios/lena/lena4.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            história do prato - embolado berrante
+             <div class="audio-player" data-src="audios/lena/lena5.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA preparo orapronobis
+             <div class="audio-player" data-src="audios/lena/lena6.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA tempero alho e carne
+             <div class="audio-player" data-src="audios/lena/lena7.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            história de preparos e anotações de receitas 
+             <div class="audio-player" data-src="audios/lena/lena8.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            colocar coisas boas na comida e gostar de comer 
+             <div class="audio-player" data-src="audios/lena/lena9.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            histórias: o sonho de um restaurante 
+             <div class="audio-player" data-src="audios/lena/lena10.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA: amassar a carne para dar liga 
+            <div class="audio-player" data-src="audios/lena/lena11.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA: modelagem e recheio almôndega 
+             <div class="audio-player" data-src="audios/lena/lena12.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            opinião: mesmo com receita, o sabor nunca é igual 
+             <div class="audio-player" data-src="audios/lena/lena13.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA: orapronobis rasgado 
+             <div class="audio-player" data-src="audios/lena/lena14.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            dicas para fazer colorau 
+             <div class="audio-player" data-src="audios/lena/lena15.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA: molho de tomates 
+             <div class="audio-player" data-src="audios/lena/lena16.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            som da carne fritando 
+             <div class="audio-player" data-src="audios/lena/lena17.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            RECEITA: finalizar com orapronobis rasgado no molho
+             <div class="audio-player" data-src="audios/lena/lena18.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+            como aprendeu a cozinhar e a vida com as irmãs
+             <div class="audio-player" data-src="audios/lena/lena19.mp3">
+                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                <span class="time">0:00 / 0:00</span>
+                <div class="progress-container lenaOppacity">
+                    <div class="progress-bar lena"></div>
+                    <div class="progress-handle lena"></div>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>

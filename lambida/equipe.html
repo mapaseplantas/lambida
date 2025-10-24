@@ -7,24 +7,28 @@
   </head>
 
   <body>
-	<div class="bg"></div>
-	<div class="info">
-		<imagem>
-			<img src="img/logo_equipe.png" width="300">
-			<img src="img/ilustracao_equipe.png" width="200">
-		</imagem>
-		<texto class="equipe_texto">
-			<p><b>LUISA MACEDO</b>: DIREÇÃO ARTÍSTICA</p>
-			<p><b>LAIS VELOSO</b>: DIREÇÃO ARTÍSTICA</p>
-			<p><b>SARA LAMBRANHO</b>: COMUNICAÇÃO VISUAL</p>
-			<p><b>SARA LANA</b>: WEB</p>
-			<p><b>FINANCEIRO</b>: FLAVIA MAFRA</p>
-			<p><b>LUISA MACEDO</b>: DIREÇÃO ARTÍSTICA</p>
-			<p><b>LAIS VELOSO</b>: DIREÇÃO ARTÍSTICA</p>
-			<p><b>SARA LAMBRANHO</b>: COMUNICAÇÃO VISUAL</p>
-			<p><b>SARA LANA</b>: WEB</p>
-			<p><b>FINANCEIRO</b>: FLAVIA MAFRA</p>
-		</texto>
+	<div class="hamburger">
+		<img src="./img/menu.png" class="burgImg" onclick="desenharMenu()">
+		<menu id="menu" class="menu hide"></menu>
 	</div>
+	<main class="center">
+		<div class="info">
+			<div class="imagens">
+				<a href="index.html">
+				<img src="img/logo_equipe.png" width="300" alt="Equipe Logo">
+				</a>
+				<img src="img/ilustracao_equipe.png" width="200" alt="Ilustração Equipe">
+			</div>
+
+			<div class="texto equipe_texto">
+				<p><b>LUISA MACEDO</b>: DIREÇÃO ARTÍSTICA</p>
+				<p><b>LAIS VELOSO</b>: DIREÇÃO ARTÍSTICA</p>
+				<p><b>SARA LAMBRANHO</b>: COMUNICAÇÃO VISUAL</p>
+				<p><b>FELIPE ESTEVES E SARA LANA</b>: WEB</p>
+				<p><b>FINANCEIRO</b>: FLAVIA MAFRA</p>
+			</div>
+		</div>
+	</main>
+	<script src="script.js"></script>
   </body>
 </html>
